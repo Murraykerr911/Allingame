@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MOVĒ — Mega Ultimate Build</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game">
+    <header class="topbar">
+      <div id="brand">MOVĒ</div>
+      <div id="level" class="lvl">LVL. <span id="level-val">1</span></div>
+      <div id="week">W<span id="week-val">1</span></div>
+    </header>
+
+    <main class="main">
+      <section class="left">
+        <div class="card stats">
+          <h3>Snapshot</h3>
+          <div class="row"><strong>Cash:</strong> <span id="cash">£0</span></div>
+          <div class="row"><strong>Energy:</strong> <span id="energy">100</span>/100</div>
+          <div class="row stat-grid">
+            <div>🎤 Singing: <span id="stat-singing">1</span></div>
+            <div>🎭 Acting: <span id="stat-acting">1</span></div>
+            <div>✨ Charisma: <span id="stat-charisma">1</span></div>
+            <div>💪 Virility: <span id="stat-virility">1</span></div>
+          </div>
+          <div class="row stat-grid">
+            <div>✍️ Songwriting: <span id="stat-songwriting">1</span></div>
+            <div>🏗 Studio: <span id="stat-studio">1</span></div>
+            <div>🎬 Directing: <span id="stat-directing">1</span></div>
+            <div>🕺 Dance: <span id="stat-dance">1</span></div>
+          </div>
+          <div class="row"><strong>XP:</strong> <span id="xp">0</span></div>
+          <div class="row"><strong>Perception:</strong>
+            <div id="perception-bar" class="perception"><div id="perception-fill"></div></div>
+            <span id="perception-text">Green</span>
+          </div>
+          <div class="row small"><strong>Lessons:</strong> <span id="lessons-completed">0</span>/5</div>
+        </div>
+
+        <div class="card actions">
+          <h3>Quick Actions</h3>
+          <div class="action-grid">
+            <button id="practice" class="btn">Practice Singing (10E)</button>
+            <button id="audition" class="btn">Audition (15E)</button>
+            <button id="create-song" class="btn">Create Song (20E)</button>
+            <button id="write-project" class="btn">Write Movie/TV (15E)</button>
+            <button id="start-prod" class="btn">Start Production (30E)</button>
+            <button id="start-tour" class="btn">Start Tour (cost)</button>
+            <button id="perform-award" class="btn">Perform at Awards</button>
+            <button id="run-campaign" class="btn">Social Campaign</button>
+          </div>
+        </div>
+
+        <div class="card training">
+          <h3>Training & Development</h3>
+          <div class="row">
+            <button id="train-songwriting" class="btn">Songwriting Course (£2,000)</button>
+            <button id="train-studio" class="btn">Upgrade Studio (£40,000)</button>
+          </div>
+          <div class="row">
+            <button id="train-dance" class="btn">Dance Lessons (£1,200)</button>
+            <button id="train-accent" class="btn">Accent Training (£1,500)</button>
+          </div>
+        </div>
+
+        <div class="card businesses">
+          <h3>Businesses & Assets</h3>
+          <div class="row">
+            <button id="buy-prod" class="btn">Buy Production Co (£250k)</button>
+            <button id="buy-label" class="btn">Buy Record Label (£200k)</button>
+            <button id="buy-studio" class="btn">Buy/Upgrade Studio (£40k)</button>
+          </div>
+          <div class="row">
+            <button id="buy-agency" class="btn">Start Talent Agency (£80k)</button>
+            <button id="buy-festival" class="btn">Start Festival (£120k)</button>
+          </div>
+          <div class="row small" id="companies-list">None</div>
+        </div>
+      </section>
+
+      <section class="right">
+        <div class="card world">
+          <h3>Events & Log</h3>
+          <div id="events-log" class="log"></div>
+        </div>
+
+        <div class="card spotify">
+          <h3>Spotify-style Charts</h3>
+          <div id="spotify-list" class="small">No songs yet.</div>
+          <div class="row">
+            <button id="promote-song" class="btn">Promote Song</button>
+            <button id="update-charts" class="btn">Update Charts</button>
+          </div>
+        </div>
+
+        <div class="card projects">
+          <h3>Projects (Movies / TV)</h3>
+          <div id="projects-list" class="small">No projects yet.</div>
+          <div class="row">
+            <button id="assign-actors" class="btn">Assign Actor</button>
+            <button id="sell-project" class="btn">Sell Project</button>
+          </div>
+        </div>
+
+        <div class="card extras">
+          <h3>Extras</h3>
+          <div class="row"><button id="buy-real-estate" class="btn">Buy Property (£60k)</button></div>
+          <div class="row"><button id="merch-drop" class="btn">Release Merch Drop</button></div>
+          <div class="row"><button id="charity-event" class="btn">Host Charity Event</button></div>
+          <div class="row"><button id="scandal" class="btn">Trigger/Handle Scandal</button></div>
+        </div>
+
+        <div class="card control">
+          <h3>Promo & Controls</h3>
+          <input id="promo-input" placeholder="Enter promo code" />
+          <div class="row">
+            <button id="apply-promo" class="btn">Apply</button>
+            <button id="next-week" class="btn primary">Next Week</button>
+            <button id="save" class="btn">Save</button>
+            <button id="reset" class="btn danger">Reset</button>
+          </div>
+          <small>Promo codes: Prog-witch, Cas-</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>Ultimate Build • Playtest version</div>
+      <div>Made for Murray</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
